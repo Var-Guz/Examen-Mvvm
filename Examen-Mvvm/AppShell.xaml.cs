@@ -1,4 +1,6 @@
-﻿namespace Examen_Mvvm
+﻿using Microsoft.Maui.Controls;
+
+namespace Examen_Mvvm
 {
     public partial class AppShell : Shell
     {

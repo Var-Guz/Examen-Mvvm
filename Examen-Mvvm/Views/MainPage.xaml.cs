@@ -1,12 +1,15 @@
-﻿namespace Examen_Mvvm.Views
+﻿using Microsoft.Maui.Controls;
+using Examen_Mvvm.ViewModels;
+
+namespace Examen_Mvvm.Views
 {
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
-            BindingContext = new ViewModels.MainViewModel();
+            BindingContext = new MainViewModel();
         }
     }
-
 }
+
