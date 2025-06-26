@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Examen-Mvvm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3dd0a0c128744750ddc1eb8a2ef476b3c140fab4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Examen-Mvvm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Examen-Mvvm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
