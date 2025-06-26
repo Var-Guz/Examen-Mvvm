@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Examen_Mvvm.ViewModels"
+             x:Class="Examen_Mvvm.Views.MainPage"
+             x:DataType="viewmodels:MainViewModel"
+             Title="Examen MVVM">
+
+    <ContentPage.Content>
+        <VerticalStackLayout Padding="20" Spacing="10">
+
+            <Entry Placeholder="Producto 1" 
+                   Keyboard="Numeric" 
+                   Text="{Binding Producto1}" />
+
+            <Entry Placeholder="Producto 2" 
+                   Keyboard="Numeric" 
+                   Text="{Binding Producto2}" />
+
+            <Entry Placeholder="Producto 3" 
+                   Keyboard="Numeric" 
+                   Text="{Binding Producto3}" />
+
+            <Frame BorderColor="LightGray" Padding="10" CornerRadius="10">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="Subtotal:" FontAttributes="Bold" />
+                    <Label Text="{Binding Subtotal, StringFormat='L{0:F2}'}" />
+
+                    <Label Text="Descuento:" FontAttributes="Bold" />
+                    <Label Text="{Binding Descuento, StringFormat='L{0:F2}'}" />
+
+                    <Label Text="Total a Pagar:" FontAttributes="Bold" />
+                    <Label Text="{Binding Total, StringFormat='L{0:F2}'}" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button Text="Calcular" 
+                    Command="{Binding CalcularCommand}" />
+
+            <Button Text="Limpiar" 
+                    Command="{Binding LimpiarCommand}" 
+                    BackgroundColor="LightGray" />
+
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>
